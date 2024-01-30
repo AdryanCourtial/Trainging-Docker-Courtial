@@ -34,9 +34,10 @@ def action_bot() -> str:
         action_bot = "Pierre"
     if rdm_int == 2:
         action_bot = "Papier"
-    if action_bot == 3:
+    if rdm_int == 3:
         action_bot = "Ciseau"
     print(f"L'enemy as fais {action_bot}")
+    return action_bot
 
 
 
