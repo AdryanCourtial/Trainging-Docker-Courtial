@@ -8,8 +8,6 @@ def choose_name() -> str:
     """
     #Beug
     player_name = input("Quelle est ton nom ?\n")
-    if match(r" ", player_name) is not None or player_name is "":
-        choose_name()
     print(f"Bonjour {player_name} et bonne chance !")
     return player_name
 
@@ -70,6 +68,6 @@ def verif_winner(player_move, bot_moove) -> str:
 
 
 if __name__ == '__main__':
-    player = choose_name()
+    choose_name()
     while True:
         print(verif_winner(choose_action(), action_bot()))
